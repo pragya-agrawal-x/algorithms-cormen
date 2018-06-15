@@ -6,3 +6,12 @@ def insertion_sort_descending(input_sequence):
             input_sequence[j + 1] = input_sequence[j]
             j = j - 1
         input_sequence[j + 1] = key
+
+
+def find_index(input_sequence, element):
+    index = None
+    for i in xrange(0, len(input_sequence)):
+        if input_sequence[i] == element:
+            index = i
+            break
+    return index
