@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: debian:stretch
+      - image: pragya1996/complete-docker-new
     steps:
       - checkout
       - run:
