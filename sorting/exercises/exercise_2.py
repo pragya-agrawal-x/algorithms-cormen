@@ -15,3 +15,10 @@ def find_index(input_sequence, element):
             index = i
             break
     return index
+
+def find_smallest_element(input_sequence):
+    temp = input_sequence[0]
+    for i in xrange(1, len(input_sequence)):
+        if input_sequence[i] < temp:
+            temp = input_sequence[i-1]
+    return temp

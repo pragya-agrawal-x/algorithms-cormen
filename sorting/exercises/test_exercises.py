@@ -13,3 +13,7 @@ class ExerciseTest(unittest.TestCase):
         input_sequence = [0, 111, 222, 333, 444, 555, 666, 777, 888, 999]
         self.assertEqual(find_index(input_sequence, 222), 2)
         self.assertEqual(find_index(input_sequence, 287), None)
+
+    def test_exercises_2_2_4(self):
+        input_sequence = [0, 111, 222, 333, 444, 555, 666, 777, 888, 999]
+        self.assertEqual(find_smallest_element(input_sequence), 0)
